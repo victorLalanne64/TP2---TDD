@@ -11,4 +11,11 @@ public class PersonnageTest {
         assertThat(p.tourner(0)).isEqualTo("NORD");
     }
 
+    @Test
+    void tourner_1_devrait_retourner_EST() {
+        Personnage p = new Personnage();
+        assertThat(p.tourner(1)).isEqualTo("EST");
+    }
+
+
 }
